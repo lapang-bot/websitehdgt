@@ -1,0 +1,189 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  background-color: #007bFF;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Container */
+.container {
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Logo */
+.logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+/* Judul */
+h2 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+}
+
+/* Input Nomor Telepon */
+.phone-input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.country-code-box {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  border-radius: 5px 0 0 5px;
+  color: #fff;
+}
+
+#phone-number {
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 0 5px 5px 0;
+  width: 100%;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#phone-number::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Input PIN dan OTP */
+.pin-container, .otp-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-box {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 1.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Teks Info */
+.info-text {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.info-text b {
+  color: #fff;
+}
+
+/* Link Lupa PIN */
+.link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Teks Berhadiah */
+.berhadiah-text {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+/* Notifikasi Mengambang */
+.floating-notification {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #007bFF;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+/* Footer */
+.footer {
+  margin-top: auto;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
+  width: 100%;
+  padding: 10px 20px;
+}
+
+.footer p {
+  margin-bottom: 10px;
+}
+
+.button {
+  background-color: #fff;
+  color: #007bFF;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 50px; /* Atur sesuai keinginan, misalnya 50px */
+}
+  
+}
+
+.button:hover {
+  background-color: #f1f1f1;
+}
+
+.show {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.show:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3);
+}
